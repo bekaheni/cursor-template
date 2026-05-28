@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🖥️ Main",
+            "type": "shell",
+            "command": "/bin/bash",
+            "args": [
+                "-c",
+                "cd ${workspaceFolder} && /bin/bash"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "group": "main"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "🌿 Git",
+            "type": "shell",
+            "command": "/bin/bash",
+            "args": [
+                "-c",
+                "cd ${workspaceFolder} && /bin/bash"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "group": "git"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "📋 Logs",
+            "type": "shell",
+            "command": "/bin/bash",
+            "args": [
+                "-c",
+                "cd ${workspaceFolder} && /bin/bash"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "group": "logs"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
