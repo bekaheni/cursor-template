@@ -2,51 +2,44 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "🖥️ Main",
+            "label": "🤖 : Claude : Development",
             "type": "shell",
             "command": "/bin/bash",
             "args": [
                 "-c",
-                "cd ${workspaceFolder} && /bin/bash"
+                "cd /opt/visualmaths-dev && /bin/bash"
             ],
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
-                "group": "main"
+                "panel": "shared"
             },
             "runOptions": {
                 "runOn": "folderOpen"
             }
         },
         {
-            "label": "🌿 Git",
+            "label": "💻 : Local : Development",
             "type": "shell",
             "command": "/bin/bash",
             "args": [
                 "-c",
-                "cd ${workspaceFolder} && /bin/bash"
+                "cd /opt/visualmaths-dev && /bin/bash"
             ],
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
-                "group": "git"
+                "panel": "shared"
             },
             "runOptions": {
                 "runOn": "folderOpen"
             }
         },
         {
-            "label": "📋 Logs",
+            "label": "🚀 : Live : Production",
             "type": "shell",
-            "command": "/bin/bash",
-            "args": [
-                "-c",
-                "cd ${workspaceFolder} && /bin/bash"
-            ],
+            "command": "ssh -p 56765 -t ubuntu@57.128.159.201 'cd /opt/visualmaths && exec bash --login'",
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
-                "group": "logs"
+                "panel": "shared"
             },
             "runOptions": {
                 "runOn": "folderOpen"
