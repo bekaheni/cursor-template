@@ -36,6 +36,11 @@ sudo mkdir -p "$TARGET_DIR"
 # 7. Copy .cursorignore
 sudo cp "$TEMPLATE_DIR/.cursorignore" "$TARGET_DIR/.cursorignore"
 
+# 7b. Copy standard project files
+for f in AGENTS.md README.md CHANGELOG.md .gitignore .editorconfig; do
+    sudo cp "$TEMPLATE_DIR/$f" "$TARGET_DIR/$f"
+done
+
 # 8. Create .vscode folder
 sudo mkdir -p "$TARGET_DIR/.vscode"
 
